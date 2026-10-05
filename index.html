@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emorce PFP — Avatar · Server · Viewer</title>
-  <meta name="description" content="Emorce PFP — Discord avatar fetcher, server list, website viewer. Black hexed vibe." />
-  <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/hexed00/emorce-hexed/main/public/icon.jpg" />
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Emorce PFP</title>
+<link rel="icon" href="https://raw.githubusercontent.com/hexed00/emorce-hexed/main/public/icon.jpg"/>
 </head>
-<body>
-<p>PLACEHOLDER - will replace</p>
+<body style="background:#050505;color:#888;font-family:system-ui;display:flex;align-items:center;justify-content:center;height:100vh;margin:0">
+Loading Emorce PFP…
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+<script>
+// Full site will load from companion raw file
+fetch('https://raw.githubusercontent.com/hexed00/emorce-pfp/main/app.html').then(r=>r.text()).then(t=>{document.open();document.write(t);document.close();}).catch(()=>{document.body.innerHTML='<p style=color:#c43030>Deploy app.html next</p>';});
+</script>
 </body>
 </html>
